@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="spaceship-sidebar">
+        <div class="spaceship-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Apollo_11_Launch_-_GPN-2000-000630.jpg/800px-Apollo_11_Launch_-_GPN-2000-000630.jpg" alt="Apollo 11" class="spaceship-img">
+            <img src="img/satellite-2771043_1280.webp" alt="Satélite" class="spaceship-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Long_March_5_Y2_launch.jpg/800px-Long_March_5_Y2_launch.jpg" alt="Long March 5" class="spaceship-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/SpaceX_Crew-1_%2849905660122%29.jpg/800px-SpaceX_Crew-1_%2849905660122%29.jpg" alt="SpaceX Crew Dragon" class="spaceship-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Space_Shuttle_Discovery_taking_off_on_STS-120.jpg/800px-Space_Shuttle_Discovery_taking_off_on_STS-120.jpg" alt="Space Shuttle" class="spaceship-img">
+        </div>
+    </div>
+
+    <!-- Modal para mostrar la imagen en grande -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Bienvenido a Nuestra Página</h1>
+            <p>Regístrate y comparte tus comentarios con nosotros</p>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Registro y Comentarios</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Tu comentario:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </section>
+
+            <section class="comments-section">
+                <h2>Comentarios Recientes</h2>
+                <div id="commentsList">
+                    <!-- Los comentarios se mostrarán aquí -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Página de Comentarios. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
